@@ -12,6 +12,13 @@ import org.apache.commons.io.LineIterator;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
+/**
+ * @author ag_3112@outlook.com
+ * 
+ *         Example to Change the content of Iterator using Transformer of
+ *         Apache-Commons
+ * 
+ */
 public class TransformIteratorExample {
 
 	private static Log logger = LogFactory
@@ -45,6 +52,7 @@ public class TransformIteratorExample {
 			@Override
 			public Object transform(Object input) {
 				String str = (String) input;
+				/* INFO: Now you can change the content of Iterator */
 				if ("TestLine 2".equals(str)) {
 					str = "Changed to TestList 10";
 				}
